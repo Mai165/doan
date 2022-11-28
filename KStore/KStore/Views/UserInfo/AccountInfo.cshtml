@@ -1,0 +1,64 @@
+﻿@model RegisterViewModel
+@{ ViewData["Title"] = "Register"; }
+<!-- Breadcrumbs -->
+
+<div class="breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <ul>
+                    <li class="home"> <a title="Go to Home Page" href="/">Home</a><span>&raquo;</span></li>
+                    <li><strong>Change Password</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Breadcrumbs End -->
+<!-- Main Container -->
+<section class="main-container col1-layout">
+    <div class="main container">
+        <div class="page-content">
+            <div class="account-login">
+                <div class="col-md-3 col-sm-2"></div>
+                <div class="col-md-6 col-sm-8">
+                    <div class="single-input p-bottom50 clearfix">
+                        <form asp-route-returnUrl="@ViewData["ReturnUrl"]" method="post">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="check-title">
+                                        <div asp-validation-summary="All" class="text-danger"></div>
+
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <label>Password:</label>
+                                    <div class="input-text">
+                                        <input type="password" asp-for="Password" name="password" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <label>Confirm Password:</label>
+                                    <div class="input-text">
+                                        <input type="password" asp-for="ConfirmPassword" name="confirmPassword" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="submit-text">
+                                        <button type="submit" class="button"><i class="fa fa-user"></i>&nbsp; <span>Change</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Main Container End -->
+
+@section Scripts {
+
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+}

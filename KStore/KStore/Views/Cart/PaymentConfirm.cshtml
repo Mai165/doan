@@ -1,0 +1,52 @@
+﻿@{
+    ViewData["Title"] = "Checkout";
+}
+
+<div class="breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <ul>
+                    <li class="home"> <a title="Go to Home Page" href="/">Home</a><span>&raquo;</span></li>
+                    <li><strong>Checkout</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Breadcrumbs End -->
+<!-- Main Container -->
+<section class="main-container col2-right-layout">
+    <div class="main container">
+        <div class="row">
+            <div class="col-main col-sm-12 col-xs-12">
+                <div class="page-title">
+                    <h2>Checkout</h2>
+                </div>
+                <div class="page-content checkout-page">
+                    @if (ViewData["Success"] != null)
+                    {
+                        if ((bool)ViewData["Success"] == true)
+                        {
+                            <div class="alert alert-success">
+                                Thank you for your order. We are going to confirm your order soon.
+                            </div>
+                            <div>
+                                @ViewBag.Message
+                            </div>
+
+                        }
+                        else
+                        {
+                            <div class="alert alert-danger">
+                                Have an error in order progress. Please contact to administrator.
+                            </div>
+
+                        }
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Main Container End -->

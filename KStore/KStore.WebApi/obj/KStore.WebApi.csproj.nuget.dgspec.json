@@ -1,0 +1,524 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\KStore\\KStore\\KStore.WebApi\\KStore.WebApi.csproj": {}
+  },
+  "projects": {
+    "D:\\KStore\\KStore\\KStore.Application.Dapper\\KStore.Application.Dapper.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\KStore\\KStore\\KStore.Application.Dapper\\KStore.Application.Dapper.csproj",
+        "projectName": "KStore.Application.Dapper",
+        "projectPath": "D:\\KStore\\KStore\\KStore.Application.Dapper\\KStore.Application.Dapper.csproj",
+        "packagesPath": "C:\\Users\\11193\\.nuget\\packages\\",
+        "outputPath": "D:\\KStore\\KStore\\KStore.Application.Dapper\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\11193\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.35, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.413\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\KStore\\KStore\\KStore.Application\\KStore.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\KStore\\KStore\\KStore.Application\\KStore.Application.csproj",
+        "projectName": "KStore.Application",
+        "projectPath": "D:\\KStore\\KStore\\KStore.Application\\KStore.Application.csproj",
+        "packagesPath": "C:\\Users\\11193\\.nuget\\packages\\",
+        "outputPath": "D:\\KStore\\KStore\\KStore.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\11193\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\KStore\\KStore\\KStore.Data.EF\\KStore.Data.EF.csproj": {
+                "projectPath": "D:\\KStore\\KStore\\KStore.Data.EF\\KStore.Data.EF.csproj"
+              },
+              "D:\\KStore\\KStore\\KStore.Data\\KStore.Data.csproj": {
+                "projectPath": "D:\\KStore\\KStore\\KStore.Data\\KStore.Data.csproj"
+              },
+              "D:\\KStore\\KStore\\KStore.Utilities\\KStore.Utilities.csproj": {
+                "projectPath": "D:\\KStore\\KStore\\KStore.Utilities\\KStore.Utilities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "EPPlus.Core": {
+              "target": "Package",
+              "version": "[1.5.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.413\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\KStore\\KStore\\KStore.Data.EF\\KStore.Data.EF.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\KStore\\KStore\\KStore.Data.EF\\KStore.Data.EF.csproj",
+        "projectName": "KStore.Data.EF",
+        "projectPath": "D:\\KStore\\KStore\\KStore.Data.EF\\KStore.Data.EF.csproj",
+        "packagesPath": "C:\\Users\\11193\\.nuget\\packages\\",
+        "outputPath": "D:\\KStore\\KStore\\KStore.Data.EF\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\11193\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\KStore\\KStore\\KStore.Data\\KStore.Data.csproj": {
+                "projectPath": "D:\\KStore\\KStore\\KStore.Data\\KStore.Data.csproj"
+              },
+              "D:\\KStore\\KStore\\KStore.Infrastructure\\KStore.Infrastructure.csproj": {
+                "projectPath": "D:\\KStore\\KStore\\KStore.Infrastructure\\KStore.Infrastructure.csproj"
+              },
+              "D:\\KStore\\KStore\\KStore.Utilities\\KStore.Utilities.csproj": {
+                "projectPath": "D:\\KStore\\KStore\\KStore.Utilities\\KStore.Utilities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.Extensions.Configuration.FileExtensions": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.413\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\KStore\\KStore\\KStore.Data\\KStore.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\KStore\\KStore\\KStore.Data\\KStore.Data.csproj",
+        "projectName": "KStore.Data",
+        "projectPath": "D:\\KStore\\KStore\\KStore.Data\\KStore.Data.csproj",
+        "packagesPath": "C:\\Users\\11193\\.nuget\\packages\\",
+        "outputPath": "D:\\KStore\\KStore\\KStore.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\11193\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\KStore\\KStore\\KStore.Infrastructure\\KStore.Infrastructure.csproj": {
+                "projectPath": "D:\\KStore\\KStore\\KStore.Infrastructure\\KStore.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.413\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\KStore\\KStore\\KStore.Infrastructure\\KStore.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\KStore\\KStore\\KStore.Infrastructure\\KStore.Infrastructure.csproj",
+        "projectName": "KStore.Infrastructure",
+        "projectPath": "D:\\KStore\\KStore\\KStore.Infrastructure\\KStore.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\11193\\.nuget\\packages\\",
+        "outputPath": "D:\\KStore\\KStore\\KStore.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\11193\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.413\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\KStore\\KStore\\KStore.Utilities\\KStore.Utilities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\KStore\\KStore\\KStore.Utilities\\KStore.Utilities.csproj",
+        "projectName": "KStore.Utilities",
+        "projectPath": "D:\\KStore\\KStore\\KStore.Utilities\\KStore.Utilities.csproj",
+        "packagesPath": "C:\\Users\\11193\\.nuget\\packages\\",
+        "outputPath": "D:\\KStore\\KStore\\KStore.Utilities\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\11193\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.413\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\KStore\\KStore\\KStore.WebApi\\KStore.WebApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\KStore\\KStore\\KStore.WebApi\\KStore.WebApi.csproj",
+        "projectName": "KStore.WebApi",
+        "projectPath": "D:\\KStore\\KStore\\KStore.WebApi\\KStore.WebApi.csproj",
+        "packagesPath": "C:\\Users\\11193\\.nuget\\packages\\",
+        "outputPath": "D:\\KStore\\KStore\\KStore.WebApi\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\11193\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\KStore\\KStore\\KStore.Application.Dapper\\KStore.Application.Dapper.csproj": {
+                "projectPath": "D:\\KStore\\KStore\\KStore.Application.Dapper\\KStore.Application.Dapper.csproj"
+              },
+              "D:\\KStore\\KStore\\KStore.Application\\KStore.Application.csproj": {
+                "projectPath": "D:\\KStore\\KStore\\KStore.Application\\KStore.Application.csproj"
+              },
+              "D:\\KStore\\KStore\\KStore.Data.EF\\KStore.Data.EF.csproj": {
+                "projectPath": "D:\\KStore\\KStore\\KStore.Data.EF\\KStore.Data.EF.csproj"
+              },
+              "D:\\KStore\\KStore\\KStore.Data\\KStore.Data.csproj": {
+                "projectPath": "D:\\KStore\\KStore\\KStore.Data\\KStore.Data.csproj"
+              },
+              "D:\\KStore\\KStore\\KStore.Infrastructure\\KStore.Infrastructure.csproj": {
+                "projectPath": "D:\\KStore\\KStore\\KStore.Infrastructure\\KStore.Infrastructure.csproj"
+              },
+              "D:\\KStore\\KStore\\KStore.Utilities\\KStore.Utilities.csproj": {
+                "projectPath": "D:\\KStore\\KStore\\KStore.Utilities\\KStore.Utilities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.413\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

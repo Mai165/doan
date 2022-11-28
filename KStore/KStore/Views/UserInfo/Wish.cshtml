@@ -1,0 +1,56 @@
+﻿@model List<ShoppingCartViewModel>
+
+@section Scripts{
+    <script src="~/app/controllers/userInfo/index.js"></script>
+    <script>
+        var productObj = new userInfoController();
+        productObj.initialize();
+    </script>
+}
+
+<div class="main container">
+    <div class="row">
+        <div class="col-main col-xs-12">
+            <div class="my-account">
+                <div class="page-title">
+                    <h2>My Wishlist</h2>
+                </div>
+                @if (Model?.Count > 0)
+                {
+                    <div class="wishlist-item table-responsive">
+                        <table class="col-md-12">
+                            <thead>
+                                <tr>
+                                    <th class="th-delate">Remove</th>
+                                    <th class="th-product">Images</th>
+                                    <th class="th-details">Product Name</th>
+                                    <th class="th-price">Unit Price</th>
+                                    <th class="th-total th-add-to-cart">Add to Cart </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td class="th-delate"><a href="#">X</a></td>
+                                        <td class="th-product"><a href="#"><img src="@item.Product.Image" alt="cart"></a></td>
+                                        <td class="th-details"><h2><a href="#">@item.Product.Name</a></h2></td>
+                                        <td class="th-price">@item.Product.Price</td>
+                                        <th class="td-add-to-cart"><a href="#" data-id="@item.Product.Id" class="add-to-cart"> Add to Cart</a></th>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                        <a href="#" class="all-cart">Add all to cart</a>
+                    </div>
+                }
+                else
+                {
+                    <h4 style="text-align: center;">
+                        No Data
+                    </h4>
+                }
+            </div>
+        </div>
+    </div>
+</div>
