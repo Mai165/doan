@@ -61,6 +61,6 @@ namespace KStore.Application.Interfaces
 
         List<Wish> GetWishByUserID(Guid UserID);
 
-        List<BillDetail> GetBestSell(string startDate, string endDate, int top);
+        List<BillDetail> GetBestSell(DateTime? startDate, DateTime? endDate, int top);
     }
 }

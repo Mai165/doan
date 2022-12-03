@@ -71,7 +71,7 @@
                     var data = response;
                     $('#hidId').val(data.Id);
                     $('#txtCustomerName').val(data.CustomerName);
-
+                    $('#hidCreatedDate').val(data.DateCreated);
                     $('#txtCustomerAddress').val(data.CustomerAddress);
                     $('#txtCustomerMobile').val(data.CustomerMobile);
                     $('#txtCustomerMessage').val(data.CustomerMessage);
@@ -118,6 +118,7 @@
                 var customerName = $('#txtCustomerName').val();
                 var customerAddress = $('#txtCustomerAddress').val();
                 var customerId = $('#ddlCustomerId').val();
+                var dateCreated = $('#hidCreatedDate').val();
                 var customerMobile = $('#txtCustomerMobile').val();
                 var customerMessage = $('#txtCustomerMessage').val();
                 var paymentMethod = $('#ddlPaymentMethod').val();
@@ -149,6 +150,7 @@
                         CustomerName: customerName,
                         PaymentMethod: paymentMethod,
                         Status: 1,
+                        DateCreated: dateCreated,
                         BillDetails: billDetails
                     },
                     dataType: "json",
@@ -360,7 +362,7 @@
                             Id: item.Id,
                             PaymentMethod: getPaymentMethodName(item.PaymentMethod),
                             DateCreated: kstore.dateTimeFormatJson(item.DateCreated),
-                            BillStatus: getBillStatusName(item.BillStatus)
+                            BillStatus: getTag(getBillStatusName(item.BillStatus))
                         });
                     });
                     $("#lbl-total-records").text(response.RowCount);
@@ -401,6 +403,29 @@
             return status[0].Name;
         else return '';
     }
+
+    function getTag(status) {
+        var rs = "";
+        switch (status) {
+            case "New bill":
+                rs = `<span class="label label-info">${status}</span>`;
+                break;
+            case "In Progress":
+                rs = `<span class="label label-primary">${status}</span>`;
+                break;
+            case "Returned":
+                rs = `<span class="label label-warning">${status}</span>`;
+                break;
+            case "Cancelled":
+                rs = `<span class="label label-danger">${status}</span>`;
+                break;
+            case "Completed":
+                rs = `<span class="label label-success">${status}</span>`;
+                break;
+        }
+        return rs;
+    }
+
     function wrapPaging(recordCount, callBack, changePageSize) {
         var totalsize = Math.ceil(recordCount / kstore.configs.pageSize);
         //Unbind pagination if it existed or click change pagesize

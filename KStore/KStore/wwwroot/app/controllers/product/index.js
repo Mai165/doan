@@ -172,6 +172,7 @@
         if ($('#frmMaintainance').valid()) {
             e.preventDefault();
             var id = $('#hidIdM').val();
+            var datecreate = $('#hidDateCreate').val();
             var name = $('#txtNameM').val();
             var categoryId = $('#ddlCategoryIdM').combotree('getValue');
 
@@ -216,7 +217,8 @@
                     SeoPageTitle: seoPageTitle,
                     SeoAlias: seoAlias,
                     SeoKeywords: seoKeyword,
-                    SeoDescription: seoMetaDescription
+                    SeoDescription: seoMetaDescription,
+                    DateCreated: datecreate
                 },
                 dataType: "json",
                 beforeSend: function () {
@@ -274,6 +276,7 @@
             success: function (response) {
                 var data = response;
                 $('#hidIdM').val(data.Id);
+                $('#hidDateCreate').val(data.DateCreated);
                 $('#txtNameM').val(data.Name);
                 initTreeDropDownCategory(data.CategoryId);
 

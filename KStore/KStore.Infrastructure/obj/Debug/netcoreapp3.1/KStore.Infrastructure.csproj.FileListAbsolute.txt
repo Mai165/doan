@@ -37,3 +37,12 @@ D:\KStore\KStore\KStore.Infrastructure\obj\Debug\netcoreapp3.1\KStore.Infrastruc
 D:\KStore\KStore\KStore.Infrastructure\obj\Debug\netcoreapp3.1\KStore.Infrastructure.csproj.CoreCompileInputs.cache
 D:\KStore\KStore\KStore.Infrastructure\obj\Debug\netcoreapp3.1\KStore.Infrastructure.dll
 D:\KStore\KStore\KStore.Infrastructure\obj\Debug\netcoreapp3.1\KStore.Infrastructure.pdb
+D:\maineu\doan\KStore\KStore.Infrastructure\bin\Debug\netcoreapp3.1\KStore.Infrastructure.deps.json
+D:\maineu\doan\KStore\KStore.Infrastructure\bin\Debug\netcoreapp3.1\KStore.Infrastructure.dll
+D:\maineu\doan\KStore\KStore.Infrastructure\bin\Debug\netcoreapp3.1\KStore.Infrastructure.pdb
+D:\maineu\doan\KStore\KStore.Infrastructure\obj\Debug\netcoreapp3.1\KStore.Infrastructure.csprojAssemblyReference.cache
+D:\maineu\doan\KStore\KStore.Infrastructure\obj\Debug\netcoreapp3.1\KStore.Infrastructure.AssemblyInfoInputs.cache
+D:\maineu\doan\KStore\KStore.Infrastructure\obj\Debug\netcoreapp3.1\KStore.Infrastructure.AssemblyInfo.cs
+D:\maineu\doan\KStore\KStore.Infrastructure\obj\Debug\netcoreapp3.1\KStore.Infrastructure.csproj.CoreCompileInputs.cache
+D:\maineu\doan\KStore\KStore.Infrastructure\obj\Debug\netcoreapp3.1\KStore.Infrastructure.dll
+D:\maineu\doan\KStore\KStore.Infrastructure\obj\Debug\netcoreapp3.1\KStore.Infrastructure.pdb

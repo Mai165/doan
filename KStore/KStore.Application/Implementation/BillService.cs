@@ -57,7 +57,6 @@ namespace KStore.Application.Implementation
         {
             //Mapping to order domain
             var order = _mapper.Map<BillViewModel, Bill>(billVm);
-
             //Get order Detail
             var newDetails = order.BillDetails;
 
@@ -86,8 +85,7 @@ namespace KStore.Application.Implementation
                 detail.Price = product.Price;
                 _orderDetailRepository.Add(detail);
             }
-
-            _orderDetailRepository.RemoveMultiple(existedDetails.Except(updatedDetails).ToList());
+            _orderDetailRepository.RemoveMultiple(existedDetails.ToList().Except(updatedDetails).ToList());
 
             _orderRepository.Update(order);
         }
@@ -189,6 +187,22 @@ namespace KStore.Application.Implementation
         public List<BillViewModel> GetAllBindByUserID(Guid? UserID)
         {
             var data = _mapper.ProjectTo<BillViewModel>(_orderRepository.FindAll(x => x.CustomerId == UserID).OrderBy(x => x.DateModified)).ToList();
+            return data;
+        }
+
+        public List<BillViewModel> GetAllByCreateDate(DateTime? from, DateTime? to)
+        {
+            var res = _orderRepository.FindAll();
+            if (from.HasValue)
+            {
+                res = res.Where(x => x.DateCreated >= from.Value);
+            }
+            if (to.HasValue)
+            {
+                res = res.Where(x => x.DateCreated <= to.Value);
+            }
+            var data = _mapper.ProjectTo<BillViewModel>(res.OrderByDescending(x => x.DateCreated))
+               .ToList();
             return data;
         }
     }

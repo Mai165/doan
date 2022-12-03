@@ -37,3 +37,12 @@ D:\KStore\KStore\KStore.Application.Dapper\obj\Debug\netcoreapp3.1\KStore.Applic
 D:\KStore\KStore\KStore.Application.Dapper\obj\Debug\netcoreapp3.1\KStore.Application.Dapper.csproj.CoreCompileInputs.cache
 D:\KStore\KStore\KStore.Application.Dapper\obj\Debug\netcoreapp3.1\KStore.Application.Dapper.dll
 D:\KStore\KStore\KStore.Application.Dapper\obj\Debug\netcoreapp3.1\KStore.Application.Dapper.pdb
+D:\maineu\doan\KStore\KStore.Application.Dapper\bin\Debug\netcoreapp3.1\KStore.Application.Dapper.deps.json
+D:\maineu\doan\KStore\KStore.Application.Dapper\bin\Debug\netcoreapp3.1\KStore.Application.Dapper.dll
+D:\maineu\doan\KStore\KStore.Application.Dapper\bin\Debug\netcoreapp3.1\KStore.Application.Dapper.pdb
+D:\maineu\doan\KStore\KStore.Application.Dapper\obj\Debug\netcoreapp3.1\KStore.Application.Dapper.csprojAssemblyReference.cache
+D:\maineu\doan\KStore\KStore.Application.Dapper\obj\Debug\netcoreapp3.1\KStore.Application.Dapper.AssemblyInfoInputs.cache
+D:\maineu\doan\KStore\KStore.Application.Dapper\obj\Debug\netcoreapp3.1\KStore.Application.Dapper.AssemblyInfo.cs
+D:\maineu\doan\KStore\KStore.Application.Dapper\obj\Debug\netcoreapp3.1\KStore.Application.Dapper.csproj.CoreCompileInputs.cache
+D:\maineu\doan\KStore\KStore.Application.Dapper\obj\Debug\netcoreapp3.1\KStore.Application.Dapper.dll
+D:\maineu\doan\KStore\KStore.Application.Dapper\obj\Debug\netcoreapp3.1\KStore.Application.Dapper.pdb

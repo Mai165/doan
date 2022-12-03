@@ -631,19 +631,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\11193\\.nuget\\packages\\": {}
+    "C:\\Users\\Phong\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\KStore\\KStore\\KStore.Application.Dapper\\KStore.Application.Dapper.csproj",
+      "projectUniqueName": "D:\\maineu\\doan\\KStore\\KStore.Application.Dapper\\KStore.Application.Dapper.csproj",
       "projectName": "KStore.Application.Dapper",
-      "projectPath": "D:\\KStore\\KStore\\KStore.Application.Dapper\\KStore.Application.Dapper.csproj",
-      "packagesPath": "C:\\Users\\11193\\.nuget\\packages\\",
-      "outputPath": "D:\\KStore\\KStore\\KStore.Application.Dapper\\obj\\",
+      "projectPath": "D:\\maineu\\doan\\KStore\\KStore.Application.Dapper\\KStore.Application.Dapper.csproj",
+      "packagesPath": "C:\\Users\\Phong\\.nuget\\packages\\",
+      "outputPath": "D:\\maineu\\doan\\KStore\\KStore.Application.Dapper\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\11193\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Phong\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -697,7 +697,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.413\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

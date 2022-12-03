@@ -7472,19 +7472,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\11193\\.nuget\\packages\\": {}
+    "C:\\Users\\Phong\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\KStore\\KStore\\KStore.Application\\KStore.Application.csproj",
+      "projectUniqueName": "D:\\maineu\\doan\\KStore\\KStore.Application\\KStore.Application.csproj",
       "projectName": "KStore.Application",
-      "projectPath": "D:\\KStore\\KStore\\KStore.Application\\KStore.Application.csproj",
-      "packagesPath": "C:\\Users\\11193\\.nuget\\packages\\",
-      "outputPath": "D:\\KStore\\KStore\\KStore.Application\\obj\\",
+      "projectPath": "D:\\maineu\\doan\\KStore\\KStore.Application\\KStore.Application.csproj",
+      "packagesPath": "C:\\Users\\Phong\\.nuget\\packages\\",
+      "outputPath": "D:\\maineu\\doan\\KStore\\KStore.Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\11193\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Phong\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7498,14 +7498,14 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "D:\\KStore\\KStore\\KStore.Data.EF\\KStore.Data.EF.csproj": {
-              "projectPath": "D:\\KStore\\KStore\\KStore.Data.EF\\KStore.Data.EF.csproj"
+            "D:\\maineu\\doan\\KStore\\KStore.Data.EF\\KStore.Data.EF.csproj": {
+              "projectPath": "D:\\maineu\\doan\\KStore\\KStore.Data.EF\\KStore.Data.EF.csproj"
             },
-            "D:\\KStore\\KStore\\KStore.Data\\KStore.Data.csproj": {
-              "projectPath": "D:\\KStore\\KStore\\KStore.Data\\KStore.Data.csproj"
+            "D:\\maineu\\doan\\KStore\\KStore.Data\\KStore.Data.csproj": {
+              "projectPath": "D:\\maineu\\doan\\KStore\\KStore.Data\\KStore.Data.csproj"
             },
-            "D:\\KStore\\KStore\\KStore.Utilities\\KStore.Utilities.csproj": {
-              "projectPath": "D:\\KStore\\KStore\\KStore.Utilities\\KStore.Utilities.csproj"
+            "D:\\maineu\\doan\\KStore\\KStore.Utilities\\KStore.Utilities.csproj": {
+              "projectPath": "D:\\maineu\\doan\\KStore\\KStore.Utilities\\KStore.Utilities.csproj"
             }
           }
         }
@@ -7544,7 +7544,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.413\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

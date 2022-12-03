@@ -32,7 +32,7 @@ namespace KStore.Data.Interfaces
 
         public IQueryable<T> FindAll(params Expression<Func<T, object>>[] includeProperties)
         {
-            IQueryable<T> items = _context.Set<T>().AsNoTracking();
+            IQueryable<T> items = _context.Set<T>();
             if (includeProperties != null)
             {
                 foreach (var includeProperty in includeProperties)

@@ -5168,19 +5168,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\11193\\.nuget\\packages\\": {}
+    "C:\\Users\\Phong\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\KStore\\KStore\\KStore.Data\\KStore.Data.csproj",
+      "projectUniqueName": "D:\\maineu\\doan\\KStore\\KStore.Data\\KStore.Data.csproj",
       "projectName": "KStore.Data",
-      "projectPath": "D:\\KStore\\KStore\\KStore.Data\\KStore.Data.csproj",
-      "packagesPath": "C:\\Users\\11193\\.nuget\\packages\\",
-      "outputPath": "D:\\KStore\\KStore\\KStore.Data\\obj\\",
+      "projectPath": "D:\\maineu\\doan\\KStore\\KStore.Data\\KStore.Data.csproj",
+      "packagesPath": "C:\\Users\\Phong\\.nuget\\packages\\",
+      "outputPath": "D:\\maineu\\doan\\KStore\\KStore.Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\11193\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Phong\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5194,8 +5194,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "D:\\KStore\\KStore\\KStore.Infrastructure\\KStore.Infrastructure.csproj": {
-              "projectPath": "D:\\KStore\\KStore\\KStore.Infrastructure\\KStore.Infrastructure.csproj"
+            "D:\\maineu\\doan\\KStore\\KStore.Infrastructure\\KStore.Infrastructure.csproj": {
+              "projectPath": "D:\\maineu\\doan\\KStore\\KStore.Infrastructure\\KStore.Infrastructure.csproj"
             }
           }
         }
@@ -5248,7 +5248,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.413\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

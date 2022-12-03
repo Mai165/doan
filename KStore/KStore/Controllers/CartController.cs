@@ -143,6 +143,8 @@ namespace KStore.Controllers
 
                         var content = _viewRenderService.RenderToStringAsync("Cart/_BillMail", billViewModel);
                         _emailSender.SendEmailAsync(_configuration["MailSettings:AdminMail"], "New bill from Kness Store", content.Result);
+                        model.Carts = session;
+                        HttpContext.Session.Remove(CommonConstants.CartSession);
                         ViewData["Success"] = true;
                     }
                     catch (Exception ex)
@@ -152,8 +154,6 @@ namespace KStore.Controllers
                     }
                 }
             }
-            model.Carts = session;
-            HttpContext.Session.Remove(CommonConstants.CartSession);
             return View(model);
         }
 

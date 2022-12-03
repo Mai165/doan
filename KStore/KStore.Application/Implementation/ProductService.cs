@@ -396,9 +396,12 @@ namespace KStore.Application.Implementation
         public List<ProductViewModel> GetTopRateProduct(int top)
         {
             var data = _mapper.ProjectTo<ProductViewModel>(
-                    _productRepository.FindAll().OrderBy(x => x.ViewCount)
-                ).Take(top).ToList();
-            return data;
+                    _productRepository.FindAll().OrderByDescending(x => x.ViewCount));
+            if (top != 0)
+            {
+                return data.Take(top).ToList();
+            }
+            return data.ToList();
         }
 
         public List<ProductViewModel> GetNewProduct(int top)
@@ -411,21 +414,23 @@ namespace KStore.Application.Implementation
 
         public void UpdateViewCount(int productID)
         {
-            throw new NotImplementedException();
+            var data = _productRepository.FindById(productID);
+            if (data.ViewCount == null) data.ViewCount = 0;
+            data.ViewCount++;
+            _productRepository.Update(data);
+            Save();
         }
 
-        public List<BillDetail> GetBestSell(string startDate, string endDate, int top)
+        public List<BillDetail> GetBestSell(DateTime? startDate, DateTime? endDate, int top)
         {
             var query = _billRepository.FindAll(x => x.BillStatus == BillStatus.Completed);
-            if (!string.IsNullOrEmpty(startDate))
+            if (startDate.HasValue)
             {
-                DateTime start = DateTime.ParseExact(startDate, "dd/MM/yyyy", CultureInfo.GetCultureInfo("vi-VN"));
-                query = query.Where(x => x.DateCreated >= start);
+                query = query.Where(x => x.DateCreated >= startDate.Value);
             }
-            if (!string.IsNullOrEmpty(endDate))
+            if (endDate.HasValue)
             {
-                DateTime end = DateTime.ParseExact(endDate, "dd/MM/yyyy", CultureInfo.GetCultureInfo("vi-VN"));
-                query = query.Where(x => x.DateCreated <= end);
+                query = query.Where(x => x.DateCreated <= endDate.Value);
             }
             var bill = query.ToList();
 

@@ -37,3 +37,12 @@ D:\KStore\KStore\KStore.Utilities\obj\Debug\netcoreapp3.1\KStore.Utilities.Assem
 D:\KStore\KStore\KStore.Utilities\obj\Debug\netcoreapp3.1\KStore.Utilities.csproj.CoreCompileInputs.cache
 D:\KStore\KStore\KStore.Utilities\obj\Debug\netcoreapp3.1\KStore.Utilities.dll
 D:\KStore\KStore\KStore.Utilities\obj\Debug\netcoreapp3.1\KStore.Utilities.pdb
+D:\maineu\doan\KStore\KStore.Utilities\bin\Debug\netcoreapp3.1\KStore.Utilities.deps.json
+D:\maineu\doan\KStore\KStore.Utilities\bin\Debug\netcoreapp3.1\KStore.Utilities.dll
+D:\maineu\doan\KStore\KStore.Utilities\bin\Debug\netcoreapp3.1\KStore.Utilities.pdb
+D:\maineu\doan\KStore\KStore.Utilities\obj\Debug\netcoreapp3.1\KStore.Utilities.csprojAssemblyReference.cache
+D:\maineu\doan\KStore\KStore.Utilities\obj\Debug\netcoreapp3.1\KStore.Utilities.AssemblyInfoInputs.cache
+D:\maineu\doan\KStore\KStore.Utilities\obj\Debug\netcoreapp3.1\KStore.Utilities.AssemblyInfo.cs
+D:\maineu\doan\KStore\KStore.Utilities\obj\Debug\netcoreapp3.1\KStore.Utilities.csproj.CoreCompileInputs.cache
+D:\maineu\doan\KStore\KStore.Utilities\obj\Debug\netcoreapp3.1\KStore.Utilities.dll
+D:\maineu\doan\KStore\KStore.Utilities\obj\Debug\netcoreapp3.1\KStore.Utilities.pdb

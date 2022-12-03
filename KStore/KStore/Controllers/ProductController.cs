@@ -71,10 +71,7 @@ namespace KStore.Controllers
         {
             ViewData["BodyClass"] = "product-page";
             var model = new DetailViewModel();
-            var product = _productService.GetById(id);
-            _productService.Save();
-            if (product != null) product.ViewCount++;
-            _productService.Update(product);
+            _productService.UpdateViewCount(id);
             model.Product = _productService.GetById(id);
             model.Category = _productCategoryService.GetById(model.Product.CategoryId);
             model.RelatedProducts = _productService.GetRelatedProducts(id, 9);

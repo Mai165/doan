@@ -1,11 +1,12 @@
 ﻿var HomeController = function () {
     this.initialize = function () {
         initDateRangePicker();
-        loadData();
+        var f = $('#reportrange').data('daterangepicker').startDate.format("MM/DD/YYYY");
+        var e = $('#reportrange').data('daterangepicker').endDate.format("MM/DD/YYYY");
+        loadData(f, e);
     }
 
     function loadData(from, to) {
-
         $.ajax({
             type: "GET",
             url: "/Admin/Home/GetRevenue",
@@ -18,8 +19,31 @@
                 kstore.startLoading();
             },
             success: function (response) {
-                initChart(response);
+                initChart(response.RevenueReportViewModelList);
+                var s1 = $('#reportrange').data('daterangepicker').startDate
+                var s2 = $('#reportrange').data('daterangepicker').endDate
+                var dif = s2.diff(s1, "days");
+                $('.txt_sale-between').html(
+                    "So với " + new Date(s1).addDays(-dif).format("d/m/y") + " - " + new Date(s2).addDays(-dif).format("d/m/y")
+                );
 
+                $('#growth1').html(diffGr(response.Sales.TotalOld, response.Sales.TotalCurrent));
+                $('#growth2').html(diffGr(response.OrderCount.TotalOld, response.OrderCount.TotalCurrent));
+                $('#txt_sale_count').html(kstore.formatNumber(response.Sales.TotalCurrent, 0));
+                if (response.OrderCount.TotalCurrent != 0) {
+                    $('#txt_sale-1').html(kstore.formatNumber(response.Sales.TotalCurrent / response.OrderCount.TotalCurrent, 0));
+                    if (response.OrderCount.TotalOld != 0) {
+                        $('#growth3').html(diffGr(response.Sales.TotalCurrent / response.OrderCount.TotalCurrent, response.Sales.TotalOld / response.OrderCount.TotalOld));
+                    }
+                    else {
+                        $('#growth3').html("100%");
+                    }
+                }
+                else {
+                    $('#txt_sale-1').html("0");
+                    $('#growth3').html("0");
+                }
+                $('#txt_order_count').html(kstore.formatNumber(response.OrderCount.TotalCurrent, 0));
                 kstore.stopLoading();
 
             },
@@ -146,9 +170,6 @@
             endDate: moment(),
             minDate: '01/01/2012',
             maxDate: moment().format('MM/DD/YYYY'),
-            dateLimit: {
-                days: 60
-            },
             showDropdowns: true,
             showWeekNumbers: true,
             timePicker: false,
@@ -207,5 +228,20 @@
             $('#reportrange').data('daterangepicker').remove();
         });
 
+    }
+
+    function diffGr(old, current)
+    {
+        var html = "";
+        var res = ((current - old) / current * 100.0).toLocaleString('fullwide', { maximumFractionDigits: 2 }) + "%";
+        if (current==0) return "0%";
+        if ((current - old) > 0) {
+            html = `<img style="width: 26px; height: 26px; " src="/icon/up.svg" />`
+        }
+        else {
+            html = `<img style="width: 26px; height: 26px; " src="/icon/down.svg" />`
+        }
+        html += res;
+        return html;
     }
 }

@@ -17,6 +17,8 @@ namespace KStore.Application.Interfaces
 
         List<BillViewModel> GetAllBindByUserID(Guid? UserID);
 
+        List<BillViewModel> GetAllByCreateDate(DateTime? from, DateTime? to);
+
         BillViewModel GetDetail(int billId);
 
         BillDetailViewModel CreateDetail(BillDetailViewModel billDetailVm);
